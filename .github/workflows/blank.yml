@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Unzip Project
-        run: unzip game.zip -d my_project
+        run: unzip game.*.zip -d my_project
         
       - name: Set up JDK 17
         uses: actions/setup-java@v4
